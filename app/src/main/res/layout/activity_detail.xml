@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:padding="30dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="00:00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="03:26" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/song_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="GARMI" />
+
+        <TextView
+            android:id="@+id/artist_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            tools:text="SACHET TANDON" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_skip_previous_44dp" />
+
+            <ImageButton
+                android:id="@+id/play_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_pause_circle_80dp" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_skip_next_44dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
